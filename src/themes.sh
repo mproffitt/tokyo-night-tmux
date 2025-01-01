@@ -17,6 +17,7 @@ case $SELECTED_THEME in
     ["white"]="#a9b1d6"
     ["yellow"]="#e0af68"
 
+    ["bbackground"]="#24283b"
     ["bblack"]="#414868"
     ["bblue"]="#7aa2f7"
     ["bcyan"]="#7dcfff"
@@ -41,6 +42,7 @@ case $SELECTED_THEME in
     ["white"]="#343b58"
     ["yellow"]="#8f5e15"
 
+    ["bbackground"]="#d5d6db"
     ["bblack"]="#9699a3"
     ["bblue"]="#34548a"
     ["bcyan"]="#0f4b6e"
@@ -55,7 +57,7 @@ case $SELECTED_THEME in
 *)
   # Default to night theme
   declare -A THEME=(
-    ["background"]="#1A1B26"
+    ["background"]="#1a1b26"
     ["foreground"]="#a9b1d6"
     ["black"]="#414868"
     ["blue"]="#7aa2f7"
@@ -66,6 +68,7 @@ case $SELECTED_THEME in
     ["white"]="#c0caf5"
     ["yellow"]="#e0af68"
 
+    ["bbackground"]="#1a1b26"
     ["bblack"]="#2A2F41"
     ["bblue"]="#7aa2f7"
     ["bcyan"]="#7dcfff"

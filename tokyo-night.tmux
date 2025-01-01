@@ -20,11 +20,20 @@ RESET="#[fg=${THEME[foreground]},bg=${THEME[background]},nobold,noitalics,nounde
 tmux set -g mode-style "fg=${THEME[bgreen]},bg=${THEME[bblack]}"
 
 tmux set -g message-style "bg=${THEME[blue]},fg=${THEME[background]}"
+if [ "${THEME[background]}" == "default" ]; then
+  tmux set -g message-style "bg=${THEME[blue]},fg=${THEME[bbackground]}"
+fi
+
 tmux set -g message-command-style "fg=${THEME[white]},bg=${THEME[black]}"
 
 tmux set -g pane-border-style "fg=${THEME[bblack]}"
 tmux set -g pane-active-border-style "fg=${THEME[blue]}"
 tmux set -g pane-border-status off
+
+tmux set -g menu-border-style "fg=${THEME[blue]}"
+tmux set -g menu-border-lines "rounded"
+tmux set -g menu-style "fg=${THEME[blue]}"
+tmux set -g menu-selected-style "bg=${THEME[black]} fg=${THEME[white]}"
 
 tmux set -g status-style bg="${THEME[background]}"
 

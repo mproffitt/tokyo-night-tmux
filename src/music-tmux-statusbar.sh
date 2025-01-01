@@ -18,6 +18,11 @@ ACCENT_COLOR="${THEME[blue]}"
 SECONDARY_COLOR="${THEME[background]}"
 BG_COLOR="${THEME[background]}"
 BG_BAR="${THEME[background]}"
+if [ "${THEME[background]}" == "default" ]; then
+  BG_COLOR="${THEME[bbackground]}"
+  BG_BAR="${THEME[bbackground]}"
+fi
+
 TIME_COLOR="${THEME[black]}"
 
 if [[ $1 =~ ^[[:digit:]]+$ ]]; then
